@@ -20,7 +20,7 @@ Product_Page product_Page=landing_Page.userLogin("Chaip819@gmail.com","Chaip819@
 Orders_Page orders_Page=product_Page.ordersPage();
 Boolean element=orders_Page.verifyTheOrderedProduct(itemName);
 Assert.assertTrue(element);
-
+System.out.println("changes made");
 }
 
 
@@ -31,7 +31,7 @@ Product_Page product_Page=landing_Page.userLogin("Chaip819@gmail.com","Chaip819@
 Orders_Page orders_Page=product_Page.ordersPage();
 Boolean element=orders_Page.verifyTheOrderedProduct(itemName);
 Assert.assertTrue(element);
-
+System.out.println("really");
 }
 
 @Test()
