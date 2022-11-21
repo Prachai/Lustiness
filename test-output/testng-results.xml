@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-26T21:48:39Z" name="Default suite" finished-at="2022-09-26T21:49:25Z" duration-ms="46650">
+    <groups>
+    </groups>
+    <test started-at="2022-09-26T21:48:39Z" name="Default test" finished-at="2022-09-26T21:49:25Z" duration-ms="46650">
+      <class name="test_Scripts.RahulShetty">
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:test_Scripts.RahulShetty@401f7633]" started-at="2022-09-26T21:48:39Z" name="loginApplication" finished-at="2022-09-26T21:48:56Z" duration-ms="17192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="submitOrder()[pri:0, instance:test_Scripts.RahulShetty@401f7633]" started-at="2022-09-26T21:48:56Z" name="submitOrder" finished-at="2022-09-26T21:49:05Z" duration-ms="8784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:test_Scripts.RahulShetty@401f7633]" started-at="2022-09-26T21:49:05Z" name="closeApplication" finished-at="2022-09-26T21:49:07Z" duration-ms="2297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="loginApplication()[pri:0, instance:test_Scripts.RahulShetty@401f7633]" started-at="2022-09-26T21:49:07Z" name="loginApplication" finished-at="2022-09-26T21:49:21Z" duration-ms="13529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApplication -->
+        <test-method signature="validationOrder()[pri:0, instance:test_Scripts.RahulShetty@401f7633]" started-at="2022-09-26T21:49:21Z" name="validationOrder" finished-at="2022-09-26T21:49:23Z" duration-ms="1979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validationOrder -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:test_Scripts.RahulShetty@401f7633]" started-at="2022-09-26T21:49:23Z" name="closeApplication" finished-at="2022-09-26T21:49:25Z" duration-ms="2801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- test_Scripts.RahulShetty -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
