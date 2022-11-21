@@ -5,10 +5,8 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementClickInterceptedException;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -36,7 +34,7 @@ public class Original_Code
 	List<WebElement> items = driver.findElements(By.cssSelector(".card"));
 	WebElement element=items.stream().filter(a->a.findElement(By.cssSelector("b")).getText().equalsIgnoreCase("zara coat 3")).findFirst().orElse(null);
 	element.findElement(By.xpath("//button[.=' Add To Cart']")).click();
-	
+
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
 	wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));
 
@@ -47,23 +45,23 @@ public class Original_Code
 	addToCart= driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']"));
 	addToCart.click();
 	}
-	
-	
-	
+
+
+
 	List<WebElement> names = driver.findElements(By.xpath("//div[@class='cartSection']/h3"));
 	WebElement confirmItemName=names.stream().filter(a->a.getText().equalsIgnoreCase("zara coat 3")).findFirst().orElse(null);
 	confirmItemName.findElement(By.xpath("//button[.='Buy Now']")).click();
-	
+
 	driver.findElement(By.xpath("//input[@placeholder='Select Country']")).sendKeys("india");
 	 List<WebElement> list = driver.findElements(By.xpath("//section[@class='ta-results list-group ng-star-inserted']//span"));
 	 WebElement countryName=list.stream().filter(a->a.getText().equalsIgnoreCase("india")).findFirst().orElse(null);
 	 countryName.click();
-	
+
 	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".action__submit")));
 	 driver.findElement(By.cssSelector(".action__submit")).click();
-	 
+
 	 String text=driver.findElement(By.cssSelector(".hero-primary")).getText();
 	 Assert.assertEquals(text, "THANKYOU FOR THE ORDER.");
-	 
+
 	}
 }
