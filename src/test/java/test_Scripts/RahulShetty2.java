@@ -37,23 +37,26 @@ System.out.println("really");
 @Test()
 public void validationOrder2New()
 {
+System.out.println("really");	
 Product_Page product_Page=landing_Page.userLogin("Chaip819@gmail.com","Chaip819@gmail.com");
 Orders_Page orders_Page=product_Page.ordersPage();
 Boolean element=orders_Page.verifyTheOrderedProduct(itemName);
 Assert.assertTrue(element);
 System.out.println("hungry so i will update it");
-System.out.println("hungry so i will update it soon");
-
 }
 
 @Test()
 public void validationOrde()
 {
+System.out.println("really");	
+System.out.println("ok");	
+System.out.println("hmm");
+System.out.println("yup");
 Product_Page product_Page=landing_Page.userLogin("Chaip819@gmail.com","Chaip819@gmail.com");
 Orders_Page orders_Page=product_Page.ordersPage();
 Boolean element=orders_Page.verifyTheOrderedProduct(itemName);
 Assert.assertTrue(element);
-
+System.out.println("thank u");
 }
 
 }
