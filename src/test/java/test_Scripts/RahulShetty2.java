@@ -16,6 +16,9 @@ public String itemName;
 @Test()
 public void validationOrder0()
 {
+System.out.println();	
+System.out.println(); 
+System.out.println();
 Product_Page product_Page=landing_Page.userLogin("Chaip819@gmail.com","Chaip819@gmail.com");
 Orders_Page orders_Page=product_Page.ordersPage();
 Boolean element=orders_Page.verifyTheOrderedProduct(itemName);
@@ -31,6 +34,7 @@ System.out.println();
 System.out.println();
 System.out.println();
 System.out.println();
+
 }
 
 
