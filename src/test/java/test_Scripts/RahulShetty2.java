@@ -21,6 +21,10 @@ Orders_Page orders_Page=product_Page.ordersPage();
 Boolean element=orders_Page.verifyTheOrderedProduct(itemName);
 Assert.assertTrue(element);
 System.out.println("changes made");
+System.out.println();
+System.out.println();
+System.out.println();
+System.out.println(); 
 }
 
 
